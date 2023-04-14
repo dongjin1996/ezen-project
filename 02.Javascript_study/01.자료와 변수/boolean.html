@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var a = 10;
+        var b = 20;
+        var c = 10;
+        var f = "10"; //문자형
+        var result; //중요, underfined 상태 : 아무런 값이 정의가 안된 상태
+        var result2 = null; //중요. null : 빈값.
+
+        // console.log(result);
+        console.write(Boolean(''))
+        console.write(Boolean(0))
+        console.write(Boolean(result))
+        console.write(Boolean(result2))
+
+        console.write(Boolean('안녕'))
+        console.write(Boolean(1))
+
+
+        result = a === f;
+        document.write(result, '<br>');
+
+
+        result = a == f;
+        document.write(result);
+
+    </script>
+</body>
+</html>

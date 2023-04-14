@@ -1,0 +1,447 @@
+@charset "utf-8";
+
+        /* 초기화 태그 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 0.9em !important;
+            /* height: 2000px; 강제 스크롤을 주기위해: 삭제하고 사용하세요 */
+        }
+        
+        ul {
+            list-style: none;
+            margin: 0 !important;
+            padding: 0;
+        }
+
+        a {
+            color: black !important;
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 0 !important;
+        }
+        
+        .wrap {
+            overflow: hidden;
+            min-width: 1200px;
+        }
+
+        /* 헤더 */
+
+        header {
+            width: 100%;
+            height: 80px;
+            /* position: relative; */
+            border-bottom: 1px solid rgb(212, 199, 199);
+            background-color: white;
+            position: fixed;
+            /* display: block; */
+            margin: 0 auto; 
+            z-index: 1000;
+        }
+
+        nav {
+
+            /* 혹은 width: 100% */
+            /* width: 100%; */
+            margin: 0;
+            padding: 0;
+
+            
+        }
+
+
+        .nav__logo {
+            float: left;
+            display: flex;
+            width: 200px;  
+            align-items: center;
+            
+        }
+
+        nav > a > img {
+            width: 200px;
+            align-content: center;
+            /* display: flex; */
+        }
+
+        .nav__right {
+            width:300px;
+            margin: 0 ;
+            height: 80px;
+            float: right;
+            display: flex;
+            /* align-content: center; */
+        
+
+        }
+
+        .nav__right > .nav__btn {
+            width: 112px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            /* float: right; */
+
+        }
+
+
+        .nav__btn > button:hover {
+            background-color: #E1E1E1;
+        }
+
+        .nav__btn > button {
+            height: 30px;
+            padding: 5px 8px 6px;
+            margin: 0 auto;
+            border: 1px solid rgb(231, 220, 220);
+            border-radius: 5px;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .nav__top {
+            width: 175px;
+            height: 80px;
+            padding-left: 30px;
+            display: flex;
+            align-items: center; 
+            justify-content: flex-end;  
+            float: right;
+
+
+        }
+
+        .nav__top > a > img {
+            width: 126px;
+        }
+
+        .nav__top:hover {
+            background-color: #E1E1E1;
+        }
+
+        nav > a > .nav__menu {
+           /* padding-right: 600px; */
+           color: black ;
+
+        }
+
+        .nav__menu > li > a:hover {
+            color: #FF681B !important;
+        }
+
+        .nav__menu > li {
+            /* 수평정렬 */
+            display: inline-block;
+            padding: 20px;
+            position: relative;
+            top: 0;
+        }
+
+        .w1 { display: block; font-size: 17px; font-weight: bold;}
+        .w2 { display: block; font-size: 13px;}
+
+        .sub-menu {
+            display: none;
+            width: 200px;
+            background-color: white;
+            border: 1px solid grey;
+            position: absolute;
+            top: 80px;
+        }
+
+        .sub-menu li:hover {
+            background-color: #E1E1E1;
+        }
+
+        .nav__menu > li:hover .sub-menu {
+            display: block;
+        }
+
+        .sub-menu > li {
+            padding: 10px;
+        }
+
+        .menu1 {
+            height: 460px;
+            background-image: url(../images/bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        .menu1__sub1 {
+            /* width: 942px;
+            height: 340px; */
+            /* position: relative; */
+
+        }
+
+        .menu1__sub1 > div:nth-of-type(1) {
+            width: 684px;
+            /* position: absolute; */
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            margin: 0 126px;
+            padding-top: 156px;   
+            cursor: default;
+            text-shadow: rgb(255, 255, 255) 0px 16px 40px;
+        }
+
+        .menu1__sub1 > div:nth-of-type(2) {
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white !important;
+        }
+
+        .menu1__sub1 > div:nth-of-type(3) {
+            width: 508px;
+            /* height: 80px;
+            line-height: 80; */
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+
+        /* .menu1__sub2 {
+            height: 196px; 
+            
+        } */
+
+        .menu2 {
+            height: 270px;
+            padding: 40px 0 27px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .menu2 > div {
+            width: 260px;
+        }
+
+        .menu2__sub1 > div:nth-child(1) {
+            padding: 4px 0 11px;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #E1E1E1;
+        }
+
+        .menu2__sub2 {
+            margin: 0 0 0 30px;
+        }
+
+        .menu2__sub2 > div > ul {
+            padding: 0;
+        }
+
+        .menu2__sub2 >div:nth-child(1) {
+            padding: 4px 0 11px;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #E1E1E1;
+        }
+
+        .menu2__sub2 > div > ul > li {
+            font-size: 12px;
+            padding: 8px 0;
+            cursor: pointer;
+        }
+
+        .menu2__sub2 > div > ul > li > a:hover {
+            background-color: #E1E1E1;
+        }
+
+        .menu2__sub2 > div > .sub2-btn {
+            color: #757575;
+            margin-left: 170px; 
+            font-size: 12px; 
+            border: 1px solid #E1E1E1; 
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu2__sub2 > div > .sub2-btn:hover {
+            background-color: #E1E1E1;
+        }
+
+        .menu2__sub3 {
+
+            margin: 0 0 0 30px;
+        }
+
+        .menu2__sub3 >div:nth-child(1) {
+            padding: 4px 0 11px;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #E1E1E1;
+        }
+
+        .menu2__sub3 > div > ul > li {
+            font-size: 12px;
+            padding: 8px 0;
+            cursor: pointer;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 200px;
+        }
+
+        .menu2__sub3 > div > ul > li > a:hover {
+            background-color: #E1E1E1;
+        }
+
+        .menu2__sub3 > div > .sub2-btn {
+            color: #757575;
+            margin-left: 130px; 
+            font-size: 12px; 
+            border: 1px solid #E1E1E1; 
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu2__sub3 > div > .sub2-btn:hover {
+            background-color: #E1E1E1;
+        }
+
+
+        .menu3 {
+            height: 280px;
+            background-color: #F3F5F5;
+            padding-left: 200px;
+
+
+        }
+
+        .menu3 > .menu3__sub {
+            width: 890px;
+            height: 280px;
+            background-image: url(../images/phone.png);
+            background-repeat: no-repeat;
+            background-size: 27%;
+            background-position:left;
+            margin: 0 auto;
+            padding: 0px;
+
+
+        }
+ 
+         .menu3__sub1 {
+            width: 520px;
+            height: 17px;
+            font-size: 17px;
+            margin: 101px 100px 40px 0px;
+            padding-right: 0px;
+            font-weight: bold;
+            float: right;
+     
+   
+        } 
+
+        .menu3__sub2 {
+            width: 380px;
+            height: 52px;
+            display: flex;
+            margin-left: 250px;
+            
+        }
+
+        .menu3__btn:hover {
+            background-color: #E1E1E1;
+        }
+
+        .menu3__sub2 > .menu3__btn1 {
+            width: 250px;
+            background-image: url(../images/BTN_download_android_nor.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            padding-right: 70px;
+        }
+
+        .menu3__sub2 > .menu3__btn2 {
+            width: 250px;
+            background-image: url(../images/BTN_download_ios_nor.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+
+
+        footer {
+            height: 371px;
+            padding: 52px 0 20px;
+        
+        }
+
+        .footer-menu1 {
+            width: 600px;
+            height: 35px;
+            margin: 0 auto;
+            display: flex;
+            align-content: center;
+
+        }
+
+
+        .footer-menu1 > p {
+            font-size: 12px;
+        }
+
+        .footer-menu2 {
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer > p {
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto !important;
+            /* padding-left: 950px;
+            padding-top: 20px; */
+
+
+        }
+
+        footer > p > img{
+            width: 50px;
+            padding: 10px;
+            cursor: pointer;
+           
+        }
+
+        .footer-copy {
+            font-size: 12px;
+            color: #A6AEC5;
+            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        /* 말줄임표 만드는 법, width가 반드시 있어야 한다. */
+        .test {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 200px;
+        }

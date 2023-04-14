@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+        /* 초기화 태그 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 0.9em !important;
+            height: 2000px; /*강제 스크롤을 주기위해: 삭제하고 사용하세요*/
+        }
+        
+        ul {
+            list-style: none;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        a {
+            color: black !important;
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 0 !important;
+        }
+        
+        .wrap {
+            overflow: hidden;
+            min-width: 1200px;
+        }
+
+        /* 헤더 */
+
+        header {
+            height: 80px;
+            position: relative;
+            border-bottom: 1px solid rgb(212, 199, 199);
+            background-color: white;
+        }
+
+        nav {
+
+            /* 혹은 width: 100% */
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__btn {
+            width: 112px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__btn > button {
+            height: 30px;
+            padding: 5px 8px 6px;
+            margin: 0 auto;
+            border: 1px solid rgb(231, 220, 220);
+            border-radius: 5px;
+            font-size: 10px;
+            display: flex;
+            align-self: center;
+
+        }
+
+        .nav__top {
+            width: 175px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__menu > li {
+            /* 수평정렬 */
+            display: inline-block;
+            padding: 20px;
+            position: relative;
+            top: 0;
+        }
+
+        .w1 { display: block; font-size: 17px; font-weight: bold;}
+        .w2 { display: block; font-size: 13px;}
+
+        .sub-menu {
+            display: none;
+            width: 200px;
+            background-color: white;
+            border: 1px solid grey;
+            position: absolute;
+            top: 80px;
+        }
+
+        .nav__menu > li:hover .sub-menu {
+            display: block;
+        }
+
+        .sub-menu > li {
+            padding: 10px;
+        }
+
+        .menu1 {
+            height: 460px;
+            background-image: url(../images/bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .menu1__sub1 {
+            width: 942px;
+            height: 340px;
+            position: relative;
+            /* margin: 0 auto; */
+            /* display: flex;
+            /* flex-direction: column;
+            justify-content: flex-end; */ */
+        }
+
+        .menu1__sub1 > div {
+            width: 684px;
+            /* position: absolute; */
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            margin: 0 126px;
+            padding-top: 156px;   
+        }
+
+        .menu1__sub2 {
+            height: 196px;
+            
+        }
+
+
+
+
+
+        /* 말줄임표 만드는 법, width가 반드시 있어야 한다. */
+        .test {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 200px;
+        }
