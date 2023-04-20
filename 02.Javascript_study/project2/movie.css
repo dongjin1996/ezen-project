@@ -1,1 +1,90 @@
 @charset "utf-8";
+
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+  height: 144px;
+}
+
+main {
+}
+
+.container {
+  /* height: 1440px; */
+}
+
+.row-md-3 {
+  height: 360px;
+}
+
+.sec1 {
+  display: flex;
+  border: 1px solid grey;
+}
+
+.sec1__sub1 {
+  width: 50%;
+  height: 360px;
+}
+
+.sub1__movie1 {
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.sub1__movie2 {
+  height: 50px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 100px;
+  display: flex;
+  align-self: flex-end;
+}
+
+.group1 {
+  padding: 0 10px;
+}
+
+.sec1__sub2 {
+  width: 50%;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub2__movie1 {
+  width: 646px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.sub2__movie2 {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.sec2__sub1 {
+  height: 180px;
+}
+
+.sec3-staff {
+  height: 250px;
+}
+
+/* 푸터 */
+footer {
+  height: 217px;
+}
