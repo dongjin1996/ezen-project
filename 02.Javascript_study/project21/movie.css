@@ -4,14 +4,35 @@
   /* max-width: 1440px; */
   margin: 0 auto;
   height: 100%;
+  overflow: hidden;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none !important;
+  color: black !important;
+  /* display: block !important; */
+}
+
+a:hover {
+  color: gray !important;
 }
 
 h5 {
   font-weight: bold !important;
+  font-size: 1.1rem !important;
+}
+
+h6 {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
 }
 
 .card {
-  border-radius: 5px 0 0 0 !important;
+  display: flex !important;
+  align-items: center;
+  /* --bs-card-spacer-y: none !important; */
 }
 
 .card-title {
@@ -28,12 +49,16 @@ main {
   height: 100%;
 }
 
-.row-md-3 {
-  height: 360px;
+.back-poster {
+  background-image: linear-gradient(rgba(20, 20, 10, 0.8), rgba(0, 0, 0, 0.7)),
+    url(./images/fSwYa5q2xRkBoOOjueLpkLf3N1m.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sec1 {
-  border: 1px solid grey;
+  color: white;
 }
 
 .sec1__sub1 {
@@ -42,9 +67,16 @@ main {
 
 .sub1__movie1 {
   padding-top: 50px;
-  padding-left: 20px;
+  padding-left: 25px;
   font-size: 40px;
   font-weight: bold;
+}
+
+.movie-name {
+}
+
+.movie-name-hover {
+  color: white !important;
 }
 
 .sub1__movie2 {
@@ -73,7 +105,16 @@ main {
 .sub2__movie1 {
   height: 300px;
   margin-bottom: 5px;
+  /* margin: 0 150px; */
+  padding-bottom: 5px;
   display: flex;
+  justify-content: center;
+}
+
+.movie-poster__sub1 {
+  width: 40%;
+  height: 100%;
+  display: flex !important;
   justify-content: center;
 }
 
@@ -92,13 +133,29 @@ main {
   margin: 0 auto;
 }
 
+.sec2 {
+  text-align: left;
+}
+
 .sec2__sub1 {
   margin-top: 20px;
-  height: 180px;
+  height: 100%;
 }
 
 .sec2-sub1__movie {
   font-size: 18px;
+  font-style: italic;
+}
+
+.sec2-sub2__movie {
+  font-style: italic;
+}
+
+/* 메인3 */
+
+.main-row3 {
+  padding-top: 40px !important;
+  /* padding-bottom: 40px; */
 }
 
 .sec3__sub2 {
@@ -109,17 +166,43 @@ main {
   height: 250px;
 }
 
+.actor-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --bs-card-spacer-y: none !important;
+  --bs-card-title-spacer-y: none !important;
+}
+
+.actor-name {
+  font-size: 0.8em;
+}
+
 .actor-img {
   width: 100%;
   height: 100%;
+}
+
+/*  메인4 */
+
+.main-row4 {
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .sec4__sub2 {
   height: 50px;
 }
 
+.movie-card {
+  border: none !important;
+}
+
 .sec4-movie {
   height: 250px;
+}
+
+.goodmovie {
+  width: 80% !important;
+  height: 80% !important;
 }
 
 /* 푸터 */
