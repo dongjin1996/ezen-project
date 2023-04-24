@@ -35,6 +35,14 @@ h6 {
   /* --bs-card-spacer-y: none !important; */
 }
 
+.card-body {
+  text-align: center;
+}
+
+.card-body > h6:hover {
+  color: gray !important;
+}
+
 .card-title {
   text-align: center;
 }
@@ -51,7 +59,7 @@ main {
 
 .back-poster {
   background-image: linear-gradient(rgba(20, 20, 10, 0.8), rgba(0, 0, 0, 0.7)),
-    url(./images/fSwYa5q2xRkBoOOjueLpkLf3N1m.jpg);
+    url(../images/fSwYa5q2xRkBoOOjueLpkLf3N1m.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,9 +78,6 @@ main {
   padding-left: 25px;
   font-size: 40px;
   font-weight: bold;
-}
-
-.movie-name {
 }
 
 .movie-name-hover {
