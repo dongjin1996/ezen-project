@@ -13,15 +13,18 @@ function getWeatherWithCity() {
       const title = data.title;
       const tagline = data.tagline;
       const overview = data.overview;
+      const voteaverage = data.vote_average;
       const poster_path = data.poster_path;
 
       temp.title = title;
       temp.tagline = tagline;
       temp.overview = overview;
+      temp.voteaverage = voteaverage;
       temp.poster_path = poster_path;
       console.log(title);
       console.log(tagline);
       console.log(overview);
+      console.log(voteaverage);
       console.log(poster_path);
     },
     error: function (request, status, error) {
@@ -37,6 +40,7 @@ let movieicon = "https://image.tmdb.org/t/p/w500/" + temp.poster_path;
 $(".movie-name").text(`${temp.title}`);
 $(".sec2-sub1__movie").text(`${temp.overview}`);
 $(".sec2-sub2__movie").text(`${temp.tagline}`);
+$(".movie-1").text(`${temp.voteaverage}점`);
 $(".movie-poster > a> img").attr("src", movieicon);
 console.log(temp);
 
