@@ -49,9 +49,25 @@ h6 {
 
 /* 헤더 */
 header {
-  height: 144px;
-  background-color: gray;
+  padding: 30px !important;
+  background-color: #eee;
+  border-bottom: 2px solid #919191;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+.logo > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 메인 */
 
 main {
   height: 100%;
@@ -211,7 +227,61 @@ main {
 }
 
 /* 푸터 */
+
 footer {
-  height: 217px;
-  background-color: gray;
+  min-height: 200px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-color: #eee;
+  padding: 30px 20px !important;
+}
+
+.footer__section {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  padding-top: 20px !important;
+}
+
+.bt__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+.bt__logo > a {
+  display: flex;
+  justify-content: center;
+}
+
+.bt__logo > a > img {
+  width: 80% !important;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  text-align: center;
+}
+
+.familysite {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.familysite > select {
+  width: 60%;
+  font-size: 14px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: none !important;
 }
