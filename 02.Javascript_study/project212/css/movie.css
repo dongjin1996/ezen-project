@@ -176,7 +176,6 @@ main {
 
 .main-row3 {
   padding-top: 40px !important;
-  /* padding-bottom: 40px; */
 }
 
 .sec3__sub2 {
@@ -283,7 +282,7 @@ footer {
   background-color: #000;
   color: #fff;
   font-weight: bold;
-  border-radius: none !important;
+  border-radius: 0 !important;
 }
 
 /* 스와이퍼 */
@@ -293,7 +292,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.test2 {
+.swiper {
   height: 300px;
   display: flex;
   justify-content: center;

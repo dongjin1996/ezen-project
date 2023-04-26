@@ -41,7 +41,7 @@ $(".movie-name").text(`${temp.title}`);
 $(".sec2-sub1__movie").text(`${temp.overview}`);
 $(".sec2-sub2__movie").text(`${temp.tagline}`);
 $(".movie-1").text(`${temp.voteaverage}점`);
-$(".movie-poster > a> img").attr("src", movieicon);
+$(".movie-poster > a > img").attr("src", movieicon);
 console.log(temp);
 
 // 2 ) 출연자
